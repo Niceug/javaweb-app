@@ -3,28 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>欢迎页面</title>
-    <link rel="stylesheet" href="assets/css/index.css" />
-    <script type="text/javascript" src="assets/js/index.js"></script>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <script type="text/javascript" src="./assets/js/index.js"></script>
 </head>
 
-<style>
-    a:
-</style>
 <body>
 
-<h1>Wecome to JavaWeb !</h1>
-<p>Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !
-    Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !
-    Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !
-    Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !
-    Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !
-    Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !Wecome to JavaWeb !
-</p>
+<div class="memo-centent">
+    <form method="post" action="/upload" enctype="multipart/form-data">
+            <div class="memo-title">
+                <input type="text" name = "title" placeholder="标题"/>
+            </div>
 
-<a href="/index">访问</a>
+            <h3 class="memo-maincontent-title">
+                内容
+            </h3>
 
-<div onclick="clickDiv('JavaScript')">
+            <div class="memo-maincontent">
+                <textarea name = "content"></textarea>
+            </div>
+
+            <div class="memo-upload">
+                背景图&nbsp;
+                <input type="file" name = "background-img" />
+            </div>
+
+            <div class="memo-privacy">
+                是否私密&nbsp;
+                是<input type="radio" name="privacy"/>
+                否<input type="radio" name="privacy"/>
+            </div>
+
+            <div class="memo-btns">
+                <input type="button" value="清空"/>
+                <input type="submit" value="提交"/>
+            </div>
+
+    </form>
+
 </div>
+
 
 </body>
 </html>

@@ -6,12 +6,6 @@
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1"
          metadata-complete="true">
-    
-    <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
-        <welcome-file>index.jsp</welcome-file>
-        <welcome-file>index.htm</welcome-file>
-    </welcome-file-list>
 
     <servlet>
         <servlet-name>IndexServlet</servlet-name>
@@ -22,6 +16,43 @@
         <servlet-name>IndexServlet</servlet-name>
         <url-pattern>/index</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>UploadServlet</servlet-name>
+        <servlet-class>com.ltp.javawebapp.servlet.UploadServlet</servlet-class>
+        <multipart-config>
+
+            <location>D:/test</location>
+
+            <!--上传文件的的最大容量，不写表示无限制-->
+            <!--<max-file-size>10485760</max-file-size>-->
+
+            <!--多部分HTTP请求允许的最大容量，不写表示无限制-->
+            <!--<max-request-size>10485760</max-request-size>-->
+
+            <file-size-threshold>104857</file-size-threshold>
+        </multipart-config>
+
+
+        <init-param>
+            <param-name>count</param-name>
+            <param-value>20</param-value>
+        </init-param>
+
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+    </welcome-file-list>
 
 
 </web-app>

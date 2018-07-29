@@ -1,5 +1,77 @@
-div{
-    width: 80px;
-    height: 80px;
-    border : 5px solid lightcoral;
+* {
+    outline: none;
 }
+.memo-centent {
+    margin: 0 auto;
+    padding: 10px;
+    width: 500px;
+    height: 500px;
+    background-color: beige;
+    font-size: 13px;
+}
+
+.memo-title {
+
+}
+
+.memo-title input{
+    width: 300px;
+    border : none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.memo-maincontent-title {
+    font-weight: normal;
+}
+
+.memo-maincontent textarea {
+    padding: 5px;
+    width: 400px;
+    height: 300px;
+    color: dimgray;
+    font-size: 18px;
+    font-family: 华文行楷;
+    line-height: 22px;
+    text-decoration: underline;
+    text-indent: 20px;
+}
+
+.memo-upload {
+    margin-top: 10px;
+}
+
+.memo-upload input {
+    outline: none;
+    border: none;
+}
+
+.memo-privacy {
+    margin-top: 10px;
+}
+
+.memo-btns {
+    margin-top: 10px;
+}
+
+.memo-btns input {
+    margin-left: 100px;
+    width: 80px;
+    height: 25px;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.memo-btns input:first-child {
+    background-color: lightgray;
+}
+
+.memo-btns input:last-child {
+    background-color: coral;
+}
+
+
+
